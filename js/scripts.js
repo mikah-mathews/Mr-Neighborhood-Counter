@@ -39,11 +39,20 @@ $(document).ready(function() {
     event.preventDefault();
     const inputNumber = $("#num-grab").val();
     const inputName = $("#name-grab").val();
-    let results = beepBoop(inputNumber, inputName);
-  
-    results.forEach(function(num) {
-      $(".num-output-list").append("<li>" + num + "</li>");
-    });
+    let resultsNormal = beepBoop(inputNumber, inputName);
+    let resultsReverse = reversed(beepBoop(inputNumber, inputName))
+
+    if($("#reverse").is(":checked")) {
+      resultsReverse.forEach(function(num) {
+        $(".num-output-list").append("<li>" + num + "</li>");
+      })
+    } else if($("#reverse").is(":not(:checked")) {
+      results.forEach(function(num) {
+        $(".num-output-list").append("<li>" + num + "</li>");
+      });
+    } else {
+      console.log("something went wrong in checkbox");
+    }
 
     $(".num-output").show();
     $(".num-input").hide();
@@ -52,7 +61,7 @@ $(document).ready(function() {
   $("#again").click(function() {
     $(".num-output").hide();
     $(".num-input").show();
-    location.reload(true); 
+    location.reload(true); //says .reload is deprecated but not offering a non-deprecated solution
   });
 });
 
