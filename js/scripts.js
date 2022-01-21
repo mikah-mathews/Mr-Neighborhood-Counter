@@ -1,5 +1,11 @@
 // business logic
 
 function beepBoop(num) {
-  return 0;
+  let strNum = num.toString();
+  let numNum = parseInt(num);
+
+  for (let i = 0; i<numNum; i++) {
+    console.log(i);
+  }
+  
 }
