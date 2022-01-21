@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Mr. Robot Neighborhood</title>
+  </head>
+  <body>
+    <h1>Welcome to the neighborhood!</h1>
+    <div class="numInput">
+      <p>When you enter a number, Mr. Robot will count up to it (Or down!), and replace 1 with 'Beep', 2 with 'Boop', and 3 with a surprise!</p>
+      <form id="inputNumberForm">
+        <div class="numGrab">
+          <label for="numGrab">What number do you want to count to?</label>
+          <input id="numGrab" type="text">
+        </div>
+        <div class="nameGrab">
+          <label for="nameGrab">What's your name?</label>
+          <input id="nameGrab" type="text">
+        </div>
+        <div class="reverse">
+          <label for="reverse">Count down?</label>
+          <input id="reverse" type="checkbox">
+        </div>
+        <button type="submit" class="button">Count now!</button>
+      </form>
+    </div>
+
+    <div class="num-output">
+      <h1>Alright, here's the count!</h1>
+      <ul class="num-output-List">
+      </ul>
+      <button class="button" id="again">Try a different number!</button>
+    </div>
+  </body>
+</html>

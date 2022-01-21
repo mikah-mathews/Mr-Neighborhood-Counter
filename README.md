@@ -14,7 +14,7 @@ _An exercise using arrays and looping to take a user inputted number, then count
 * Navigate to index.html file through your file interface.
 * Right click and open in the browser of your choice.
 
-* Alternatively, open the webpage at https://mikah-mathews.github.io/mr-robogers-neighborhood/
+* Alternatively, open the webpage at https://mikah-mathews.github.io/Mr-Neighborhood-Counter/
 
 ## Known Bugs
 
