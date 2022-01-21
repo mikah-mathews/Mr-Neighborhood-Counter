@@ -47,7 +47,12 @@ $(document).ready(function() {
 
     $(".num-output").show();
     $(".num-input").hide();
-  
+  });
+
+  $("#again").click(function() {
+    $(".num-output").hide();
+    $(".num-input").show();
+    location.reload(true); 
   });
 });
 
