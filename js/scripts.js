@@ -33,3 +33,13 @@ function reversed(array) {
   }
   return reverseArray;
 }
+
+$("#input-number-form").submit(function(event) {
+  event.preventDefault();
+  const inputNumber = $("#num-grab").val();
+  const inputName = $("#name-grab").val();
+
+
+});
+
+// Going to need to show output                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
