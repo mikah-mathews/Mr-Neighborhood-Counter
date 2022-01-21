@@ -1,5 +1,4 @@
 // business logic
-
 function beepBoop(num, name) {
   
   let numNum = parseInt(num);
@@ -34,13 +33,24 @@ function reversed(array) {
   return reverseArray;
 }
 
-$("#input-number-form").submit(function(event) {
-  event.preventDefault();
-  const inputNumber = $("#num-grab").val();
-  const inputName = $("#name-grab").val();
+// UI Logic
+$(document).ready(function() {
+  $("#input-number-form").submit(function(event) {
+    event.preventDefault();
+    const inputNumber = $("#num-grab").val();
+    const inputName = $("#name-grab").val();
+    let results = beepBoop(inputNumber, inputName);
+  
+    results.forEach(function(num) {
+      $(".num-output-list").append("<li>" + num + "</li>");
+    });
 
-
+    $(".num-output").show();
+    $(".num-input").hide();
+  
+  });
 });
+
 
 // Going to need to show output                    
 
