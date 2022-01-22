@@ -1,6 +1,5 @@
 // business logic
 function beepBoop(num, name) {
-  
   let numNum = parseInt(num);
   let returnArray = [];
 
@@ -33,6 +32,13 @@ function reversed(array) {
   return reverseArray;
 }
 
+function isNumber(input) {
+  let convertNum = parseInt(input)
+  if (isNaN(convertNum)) {
+    return false;
+  }
+}
+
 // UI Logic
 $(document).ready(function() {
   $("#input-number-form").submit(function(event) {
@@ -42,20 +48,25 @@ $(document).ready(function() {
     let resultsNormal = beepBoop(inputNumber, inputName);
     let resultsReverse = reversed(beepBoop(inputNumber, inputName))
 
-    if($("#reverse").is(":checked")) {
-      resultsReverse.forEach(function(num) {
-        $(".num-output-list").append("<li>" + num + "</li>");
-      })
-    } else if($("#reverse").is(":not(:checked")) {
-      resultsNormal.forEach(function(num) {
-        $(".num-output-list").append("<li>" + num + "</li>");
-      });
+    if (isNumber(inputNumber) === false) {
+      alert("Please put in a number");
     } else {
-      console.log("something went wrong in checkbox");
+      if($("#reverse").is(":checked")) {
+        resultsReverse.forEach(function(num) {
+          $(".num-output-list").append("<li>" + num + "</li>");
+          $(".num-output").show();
+          $(".num-input").hide();
+        })
+      } else if($("#reverse").is(":not(:checked")) {
+        resultsNormal.forEach(function(num) {
+          $(".num-output-list").append("<li>" + num + "</li>");
+          $(".num-output").show();
+          $(".num-input").hide();
+        });
+      } else {
+        console.log("something went wrong in checkbox");
+      }
     }
-
-    $(".num-output").show();
-    $(".num-input").hide();
   });
 
   $("#again").click(function() {
