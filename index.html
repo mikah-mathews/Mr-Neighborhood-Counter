@@ -8,40 +8,34 @@
     <title>Mr. Robot Neighborhood</title>
   </head>
   <body>
-    <div class="num-input">
-      <h1>Welcome to the neighborhood!</h1>
-      <p>When you enter a number, Mr. Robot will count up to it (Or down!), and replace 1 with 'Beep', 2 with 'Boop', and 3 with a surprise!</p>
-      <form id="input-number-form">
-        <div class="num-grab">
-          <label for="num-grab">What number do you want to count to?</label><br>
-          <input id="num-grab" type="text">
-        </div>
-        <div class="name-grab">
-          <label for="name-grab">What's your name?</label><br>
-          <input id="name-grab" type="text">
-        </div>
-        <br>
-        <div class="reverse">
-          <label for="reverse">Count down?</label>
-          <input id="reverse" type="checkbox">
-        </div>
-        <button type="submit" class="button">Count now!</button>
-        <!-- <div class="button" type="submit">
-          <div class="slide"></div>
-          <a href="#">Count now!</a>
-        </div> -->
-      </form>
-    </div>
+    <div class="container">
+      <div class="num-input">
+        <h1>Welcome to the neighborhood!</h1>
+        <p>When you enter a number, Mr. Robot will count up to it (Or down!), and replace 1 with 'Beep', 2 with 'Boop', and 3 with a surprise!</p>
+        <form id="input-number-form">
+          <div class="num-grab">
+            <label for="num-grab">What number do you want to count to?</label><br>
+            <input id="num-grab" type="text">
+          </div>
+          <div class="name-grab">
+            <label for="name-grab">What's your name?</label><br>
+            <input id="name-grab" type="text">
+          </div>
+          <br>
+          <div class="reverse">
+            <label for="reverse">Count down?</label>
+            <input id="reverse" type="checkbox">
+          </div>
+          <button type="submit" class="button">Count now!</button>
+        </form>
+      </div>
 
-    <div class="num-output">
-      <h1>Alright, here's the count!</h1>
-      <ul class="num-output-list">
-      </ul>
-      <button class="button" id="again">Try a different number!</button>
-      <!-- <div class="button" id="again">
-        <div class="slide"></div>
-        <a href="#">Try a different number!</a>
-      </div> -->
+      <div class="num-output">
+        <h1>Alright, here's the count!</h1>
+        <ul class="num-output-list">
+        </ul>
+        <button class="button" id="again">Try a different number!</button>
+      </div>
     </div>
   </body>
 </html>

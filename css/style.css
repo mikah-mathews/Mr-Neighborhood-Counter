@@ -6,6 +6,14 @@ body {
   background: forestgreen;
 }
 
+.container {
+  background: seashell;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 .num-output {
   display: none;
 }
