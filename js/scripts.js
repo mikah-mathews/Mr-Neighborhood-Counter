@@ -47,7 +47,7 @@ $(document).ready(function() {
         $(".num-output-list").append("<li>" + num + "</li>");
       })
     } else if($("#reverse").is(":not(:checked")) {
-      results.forEach(function(num) {
+      resultsNormal.forEach(function(num) {
         $(".num-output-list").append("<li>" + num + "</li>");
       });
     } else {
