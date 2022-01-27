@@ -33,7 +33,7 @@ function reversed(array) {
 }
 
 function isNumber(input) {
-  let convertNum = parseInt(input)
+  let convertNum = parseInt(input);
   if (isNaN(convertNum)) {
     return false;
   }
@@ -45,8 +45,9 @@ $(document).ready(function() {
     event.preventDefault();
     const inputNumber = $("#num-grab").val();
     const inputName = $("#name-grab").val();
+    console.log(inputName);
     let resultsNormal = beepBoop(inputNumber, inputName);
-    let resultsReverse = reversed(beepBoop(inputNumber, inputName))
+    let resultsReverse = reversed(beepBoop(inputNumber, inputName));
 
     if (isNumber(inputNumber) === false) {
       alert("Please put in a number");
@@ -72,11 +73,6 @@ $(document).ready(function() {
   $("#again").click(function() {
     $(".num-output").hide();
     $(".num-input").show();
-    location.reload(true); //says .reload is deprecated but not offering a non-deprecated solution
+    location.reload(true); 
   });
 });
-
-
-// Going to need to show output                    
-
-// FUCK THIS AHHHHH
